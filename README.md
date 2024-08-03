@@ -22,7 +22,7 @@ Este proyecto me brindó la oportunidad de interactua, aprender y fortalecer mis
 - Característica 2: El desarrollo y presentacion se ha construido en CSS responsivo para presentarlo entre PCs, portátiles, tablets y celulares.
 - Característica 3: El codigo con el que se resuelve la encrptacion, desencriptacion y copia de los elementos de la pagina se ha llevado a cabo con javascript.
 
-## Corriendo la aplicacion
+## Corriendo la aplicación
 Entre los requerimientos del proyecto, se estipulo la instalacion de la pagina en un servidor llamado https://vercel.com/ y se creó un proyecto para este proyecto llamado aracelis-projects-eaa6078a
 
 ## Contacto
