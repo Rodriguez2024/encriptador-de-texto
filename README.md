@@ -9,7 +9,7 @@ Este cambio de plataforma ha sido toda una revelacion y un gran reto para mi.
 ## Tabla de Contenidos
 1. [Introducción](#introducción)
 2. [Características](#características)
-3. [Eejecutando el proyecto](#Corriendo)
+3. [Ejecutando el proyecto](#Corriendo)
 4. [Contacto](#contacto)
 
 ## Introducción
