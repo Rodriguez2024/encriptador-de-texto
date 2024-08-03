@@ -9,11 +9,8 @@ Este cambio de plataforma ha sido toda una revelacion y un gran reto para mi.
 ## Tabla de Contenidos
 1. [Introducción](#introducción)
 2. [Características](#características)
-3. [Instalación](#instalación)
-4. [Uso](#uso)
-5. [Contribuir](#contribuir)
-6. [Licencia](#licencia)
-7. [Contacto](#contacto)
+3. [Ejecutando el proyecto](#Corriendo la aplicacion)
+4. [Contacto](#contacto)
 
 ## Introducción
 La base de este proyecto, como se ha mencionado con antrioridad fue para participar en el challenge de Alura para el curso que estan impartiendo.
@@ -27,3 +24,7 @@ Este proyecto me brindó la oportunidad de interactua, aprender y fortalecer mis
 
 ## Corriendo la aplicacion
 Entre los requerimientos del proyecto, se estipulo la instalacion de la pagina en un servidor llamado https://vercel.com/ y se creó un proyecto para este proyecto llamado aracelis-projects-eaa6078a
+
+## Contacto
+- email: Lourdes.Rodriguez.Galicia@outlook.com
+  
