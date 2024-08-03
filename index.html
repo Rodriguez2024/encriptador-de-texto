@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Desafío 1</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="./imagen/Logo.png" alt="logo">
+    </header>
+    <main class="presentacion">
+        <section class="presentacion__contenido">
+            <input class="presentacion__input" type="text" id="entrada" ondblclick="vaciar()" 
+            onkeyup="validar()" value="Ingresa tu texto aqui ">
+            <p class="presentacion__advertencia" >Solo letras minúsculas y sin acentos</p>
+            <div class="presentacion__enlaces">
+                <a class="presentacion__enlaces__link" onclick="codificar()" >Encripta</a>
+                <a class="presentacion__enlaces__link" onclick="decodificar()" >Desencripta</a>
+            </div>
+        </section>
+        <section class="presentacion__lateral">
+            <img class="presentacion__lateral__imagen" src="./imagen/ninio.png">
+            <p id="resultado"> --- --- </p>
+            <a class="presentacion__enlaces__link" onclick="copiar()" >Copiar</a>
+        </section>
+    </main>
+    <footer>
+        <p>Desarrollado por mlarg</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

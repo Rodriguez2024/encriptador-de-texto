@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&family=Spinnaker&family=Whisper&display=swap');
+
+:root {
+    --color-primario: #102C57;
+    --color-secundario: #F6F6F6;
+    --color-terciario: #3AA6B9;
+    --color-hover: #FF9EAA;
+    --color-fondo-input: #FFD0D0;
+
+    --fuente-tegomin: "New Tegomin", serif;
+    --fuente-spinnaker: "Spinnaker", sans-serif;;
+    --fuente-whisper: "Whisper", cursive;
+}
+
+* {
+    padding: 0;
+    margin:0;
+}
+
+
+body {
+    background-image: url('../imagen/fondo-minimalista.jpg'); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+
+.header{
+    padding: 2% 0% 0% 20%;
+}
+
+.logo {
+    width: 12%;
+}
+
+.presentacion {
+    padding: 8% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.presentacion__contenido{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 1.5rem;
+}
+
+.titulo-destaque {
+    color: var(--color-terciario); ;
+}
+
+.presentacion__input {
+    border: none;
+    background-color: var(--color-fondo-input);
+    font-family: var(--fuente-tegomin);
+    font-weight: 400;
+    font-size: 1.625rem;
+    color: var(--color-terciario);
+    gap: 1.25rem;
+    padding: 0.85rem;
+    
+}
+
+.presentacion__advertencia {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    font-family: var(--fuente-tegomin);
+    color: var(--color-primario);
+    font-size: 0.75rem;
+    background-color: var(--color-secundario);
+    gap: 2rem;
+    
+}
+
+.presentacion__enlaces {
+    padding-top: 35%;
+    padding-bottom: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.presentacion__enlaces__link{
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      border: 2px solid var(--color-terciario);
+      width: 50%;
+      text-align: center;
+      border-radius: 8px;
+      font-size: 1.5rem;
+      font-weight: 600;
+      background-color: var(--color-terciario);
+      padding: 1.344rem 0;
+      text-decoration: none;
+      color: var(--color-secundario);
+      font-family: var(--fuente-tegomin);
+      position: relative;
+      bottom: 0.625rem;
+}
+
+.presentacion__enlaces__link:hover {
+    background-color: var(--color-primario);
+}
+
+.presentacion__lateral {
+    padding-bottom: 6.8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.presentacion__lateral__imagen {
+    width: 100%;
+}
+
+footer{
+    color:var(--color-fondo-input);
+    background-color: var(--color-primario);
+    padding: 0.22rem;
+    text-align: center;
+    font-family: var(--fuente-whisper);
+    font-size: 1.5rem;
+    font-weight: 400;
+    gap: 0.85rem;
+}
+
+p{
+    font-family: var(--fuente-whisper);
+    font-weight: 400;
+    font-size: 2.625rem;
+    color: var(--color-terciario);
+    gap: 1.25rem;
+}
+
+a:focus {
+    font-weight: bold;
+}
+
+
+@media (max-width: 1000px) {
+
+    .header {
+        padding: 10% 0% 0% 15%;
+    }
+
+    .header__menu {
+        justify-content: center;
+    }
+    .presentacion {
+        flex-direction: column; 
+        padding: 5%;
+    }
+
+    .presentacion__contenido {
+        width: auto;
+    }
+}
