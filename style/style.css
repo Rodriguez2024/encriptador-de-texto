@@ -161,3 +161,29 @@ footer {
     padding-bottom: 0.3rem;
 }
 
+/* Estilos para pantallas grandes (PC) */
+.presentacion__box {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    gap: 20px;
+}
+
+/* Estilos para tabletas y móviles */
+@media (max-width: 48rem) {
+    .lupa {
+        display: none;
+    }
+
+    .presentacion__box {
+        grid-template-columns: 1fr; /* Una columna en móviles */
+    }
+
+    .txt__resultado {
+        background-color: var(--color-fondo-input);
+    }
+
+    .boton {
+        width: 100%; /* Botones ocupan el ancho completo */
+        font-size: 1rem; /* Tamaño de fuente más pequeño */
+    }
+}

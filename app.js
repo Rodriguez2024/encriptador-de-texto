@@ -8,6 +8,7 @@ let dict = {
     'u':  'ufat'
 }
 
+let valorPantalla = 0;
 function vaciar () {
     let entrada = document.getElementById('entrada');
     let resultado = document.getElementById('resultado');
@@ -40,8 +41,6 @@ function validar() {
     }
 }
 
-
-
 function codificar() {
     let entrada = document.getElementById('entrada');
     let resultado = document.getElementById('resultado');
@@ -63,6 +62,7 @@ function codificar() {
     resultado.innerText = codigo; 
     console.log(resultado.innerText);
     mostrarBotonCopiar();
+    ocultarLupa();
 }
 
 function decodificar() {
@@ -78,6 +78,7 @@ function decodificar() {
     resultado.innerText = result;
     console.log(result);
     mostrarBotonCopiar();
+    ocultarLupa();
 }
 
 function copiar() {
@@ -91,12 +92,64 @@ function copiar() {
                 console.error('Error al copiar el texto: ', err);
         });
         ocultarBotonCopiar();
+        if (valorPantalla >= 920) {
+            mostrarLupa();
+        }
 }
 
 function mostrarBotonCopiar() {
     document.querySelector('.boton-copiar').style.display = 'block';
 }
 
+function mostrarLupa() {
+    document.querySelector('.lupa').style.display = 'block';
+}
 function ocultarBotonCopiar() {
     document.querySelector('.boton-copiar').style.display = 'none';
 }
+
+function ocultarLupa() {
+    document.querySelector('.lupa').style.display = 'none';
+}
+// Define the media query
+var mediaqueryList = window.matchMedia("(max-width: 920px)");
+
+// Define a function to handle the media query change
+function handleMediaQueryChange(event) {
+    console.log('Ejecutado el listener', event);
+    if (event.matches) {
+        // The viewport is 920px wide or less
+        valorPantalla = 919;
+        console.log('Viewport is 920px or less');
+    } else {
+        // The viewport is more than 920px wide
+        valorPantalla = 920;
+    }
+}
+
+// Add the event listener for media query change
+mediaqueryList.addEventListener('change', handleMediaQueryChange);
+
+// Initial check
+handleMediaQueryChange(mediaqueryList);
+
+/*                  */
+// Define la media query
+var mediaqueryList = window.matchMedia("(max-width: 920px)");
+
+// Función que se ejecuta cuando cambia el tamaño de la ventana
+function handleResize(event) {
+    if (mediaqueryList.matches) {
+        console.log("La pantalla es menor o igual a 920px de ancho");
+    } else {
+        console.log("La pantalla es mayor a 920px de ancho");
+    }
+    location.reload();
+}
+
+// Añade el evento 'resize' al objeto window
+window.addEventListener('resize', handleResize);
+
+// Ejecuta la función al cargar la página para verificar el estado inicial
+//handleResize();
+
