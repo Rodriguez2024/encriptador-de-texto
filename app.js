@@ -8,9 +8,6 @@ let dict = {
     'u':  'ufat'
 }
 
-let entrada = document.getElementById('entrada');
-let resultado = document.getElementById('resultado');
-
 function vaciar () {
     let entrada = document.getElementById('entrada');
     let resultado = document.getElementById('resultado');
@@ -43,7 +40,11 @@ function validar() {
     }
 }
 
+
+
 function codificar() {
+    let entrada = document.getElementById('entrada');
+    let resultado = document.getElementById('resultado');
     let codigo = '';
     resultado.innerText = '';
     console.log(entrada.value);
@@ -61,6 +62,7 @@ function codificar() {
     entrada = entrada.value;
     resultado.innerText = codigo; 
     console.log(resultado.innerText);
+    mostrarBotonCopiar();
 }
 
 function decodificar() {
@@ -75,6 +77,7 @@ function decodificar() {
 
     resultado.innerText = result;
     console.log(result);
+    mostrarBotonCopiar();
 }
 
 function copiar() {
@@ -87,4 +90,13 @@ function copiar() {
             .catch(err => {
                 console.error('Error al copiar el texto: ', err);
         });
+        ocultarBotonCopiar();
+}
+
+function mostrarBotonCopiar() {
+    document.querySelector('.boton-copiar').style.display = 'block';
+}
+
+function ocultarBotonCopiar() {
+    document.querySelector('.boton-copiar').style.display = 'none';
 }

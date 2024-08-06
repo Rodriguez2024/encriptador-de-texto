@@ -11,19 +11,24 @@
         <img class="logo" src="./imagen/Logo.png" alt="logo">
     </header>
     <main class="presentacion">
-        <section class="presentacion__contenido">
-            <input class="presentacion__input" type="text" id="entrada" ondblclick="vaciar()" 
-            onkeyup="validar()" value="Ingresa tu texto aqui ">
-            <p class="presentacion__advertencia" >Solo letras minúsculas y sin acentos</p>
-            <div class="presentacion__enlaces">
-                <a class="presentacion__enlaces__link" onclick="codificar()" >Encripta</a>
-                <a class="presentacion__enlaces__link" onclick="decodificar()" >Desencripta</a>
+        <section class="presentacion__box">
+            <div class="presentacion__box__entrada">
+                <input class="entrada" id="entrada" type="text" ondblclick="vaciar()" onkeyup="validar()" value="Ingresa tu texto aqui">
+                <div class="vacia"></div>
+                <div class="presentacion__box__mensaje">
+                    <img class="alerta" src="./imagen/advertencia.png" alt="Advertencia">
+                    <p class="box__alerta">Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="presentacion__box__entrada__botones">
+                    <a class="boton" onclick="codificar()">Encripta</a>
+                    <a class="boton" onclick="decodificar()">Desencripta</a>
+                </div>
             </div>
-        </section>
-        <section class="presentacion__lateral">
-            <img class="presentacion__lateral__imagen" src="./imagen/ninio.png">
-            <p id="resultado"> --- --- </p>
-            <a class="presentacion__enlaces__link" onclick="copiar()" >Copiar</a>
+            <div class="presentacion__box__output">
+                <img class="lupa" src="./imagen/ninio.png" alt="Lupa">
+                <p class="txt__resultado" id="resultado"> --- --- </p>
+                <a class="boton-copiar" onclick="copiar()">Copiar</a>    
+            </div>
         </section>
     </main>
     <footer>
